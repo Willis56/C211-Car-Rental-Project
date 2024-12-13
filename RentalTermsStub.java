@@ -28,6 +28,7 @@ public abstract class RentalTermsStub {
         this.customer = customer;
         this.rentalTotal = rentalTotal;
     }
+	
     // get and set rental length
     public int getrentalLength() {
         return rentalLength;
@@ -36,6 +37,7 @@ public abstract class RentalTermsStub {
     public void setRentalLength(int rentalLength) {
         this.rentalLength = rentalLength;
     }
+	
     // get and set customer
     public Customer getCustomer() {
         return customer;
@@ -44,6 +46,7 @@ public abstract class RentalTermsStub {
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }
+	
     // get and set rental total
     public double getRentalTotal() { 
     	return rentalTotal;
@@ -53,15 +56,14 @@ public abstract class RentalTermsStub {
     	this.rentalTotal = rentalTotal;
     }
     
- // shared methods with subclass
+    // shared methods with subclass
     // calculate rental total using rentalLength * dailyCost
     public abstract void calculateTotal();
 
-    
+    // toString method
     @Override
     public String toString() {
         return "Rental Length: " + rentalLength + "\n" + customer.toString() + "\nRental Total: " + rentalTotal;
-    }
+    }	
 	
-
 }
