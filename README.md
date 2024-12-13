@@ -4,6 +4,6 @@ The project will simulate a car rental system.  There will be a java class for C
 and checkout.  The checkout will calculate the cost based on the car and the number of days selected
 
 Contributors:
-Clay Vaughn: Customer class
-Morgan Elliott: RentalTerms class
-Joshua Willis: Car class
+Clay Vaughn (Customer class),
+Morgan Elliott (RentalTerms class),
+Joshua Willis (Car class)
