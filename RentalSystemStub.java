@@ -6,11 +6,10 @@
  * File: RentalSystemStub.java
  * 
  * Create methods for the Use Class:
- * Create Car constructor
  * Method for displaying car information
  * Method for renting car // removing carID from available cars, adding carID to unavailable cars
  * Method for returning car // removing carID from unavailable cars, adding carID to available cars
- * 
+ * Method for calculating total
  * 
  * @author: Morgan Elliott
  * @version 1.0
@@ -26,11 +25,6 @@ public class RentalSystemStub {
 	protected ArrayList<CarStub> availableCars;
 	protected ArrayList<CarStub> unavailableCars;
 	
-	// create car constructor
-	public void createCar(int rentalLength, Customer customer, double rentalTotal, String Make, String Model, int Year, String carID, int dailyCost) {
-		availableCars.add(new CarStub(rentalLength, customer, rentalTotal, Make, Model, Year, carID, dailyCost));
-		
-	}
 	
 	// display car information by searching carID
 	public void displayCarInformation(String carIDInfo) {
@@ -75,9 +69,7 @@ public class RentalSystemStub {
 	}
 	
 	public void calculateTotal() {
-		for (CarStub id : availableCars) {
-			id.calculateTotal();
-		}
+		////////////////////
 	}
 
 }
