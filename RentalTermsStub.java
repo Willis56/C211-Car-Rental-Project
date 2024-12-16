@@ -7,7 +7,6 @@
  * 
  * 
  * Establish rental terms
- * Create abstract method for calculating total cost, inherited by Car class
  * Includes attributes of rentalLength, rentalTotal, and customer
  * 
  * 
@@ -17,7 +16,7 @@
  * 
  */
 
-public abstract class RentalTermsStub {
+public class RentalTermsStub {
 	
 	protected int rentalLength;
 	protected Customer customer;
@@ -55,10 +54,6 @@ public abstract class RentalTermsStub {
     public void setRentalTotal(double rentalTotal) {
     	this.rentalTotal = rentalTotal;
     }
-    
-    // shared methods with subclass
-    // calculate rental total using rentalLength * dailyCost
-    public abstract void calculateTotal();
 
     // toString method
     @Override
