@@ -73,5 +73,11 @@ public class RentalSystemStub {
         
 		} System.out.println("Car ID not found!");
 	}
+	
+	public void calculateTotal() {
+		for (CarStub id : availableCars) {
+			id.calculateTotal();
+		}
+	}
 
 }
